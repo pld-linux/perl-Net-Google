@@ -1,7 +1,7 @@
 # Don't do tests - they require Google Web API license key
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Net
-%define	pnam	Google
+%define		pdir	Net
+%define		pnam	Google
 Summary:	Net::Google - simple OOP-ish interface to the Google SOAP API
 Summary(pl):	Net::Google - prosty, zorientowany obiektowo interfejs do Google SOAP API
 Name:		perl-Net-Google
