@@ -2,8 +2,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Net
 %define	pnam	Google
-Summary:	Simple OOP-ish interface to the Google SOAP API
-Summary(pl):	Prosty, zorientowany obiektowo interfejs do Google SOAP API
+Summary:	Net::Google - simple OOP-ish interface to the Google SOAP API
+Summary(pl):	Net::Google - prosty, zorientowany obiektowo interfejs do Google SOAP API
 Name:		perl-Net-Google
 Version:	0.61
 Release:	1
@@ -18,10 +18,12 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Simple OOP-ish interface to the Google SOAP API.
+Net::Google Perl module provides a simple OOP-ish interface to the
+Google SOAP API
 
 %description -l pl
-Prosty, zorientowany obiektowo interfejs do Google SOAP API.
+Modu³ Perla Net::Google udostêpnia prosty, zorientowany obiektowo
+interfejs do Google SOAP API.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
