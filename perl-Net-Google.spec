@@ -5,12 +5,12 @@
 Summary:	Simple OOP-ish interface to the Google SOAP API
 Summary(pl):	Prosty, zorientowany obiektowo interfejs do Google SOAP API
 Name:		perl-Net-Google
-Version:	0.60
+Version:	0.61
 Release:	1
 License:	GPL/Artistic
 Group:		Development/Languages/Perl
-# Source0-md5:	e1be119f48548145ae1143d72ec1f18b
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
+# Source0-md5:	98e32b9c487fe0c4b823670aca18fb09
 BuildRequires:	perl-SOAP-Lite
 BuildRequires:	perl-devel >= 5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
