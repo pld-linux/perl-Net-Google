@@ -2,7 +2,7 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Net
 %define	pnam	Google
-Summary:	Simple OOP-ish interface to the Google SOAP API 
+Summary:	Simple OOP-ish interface to the Google SOAP API
 Summary(pl):	Prosty, zorientowany obiektowo interfejs do Google SOAP API
 Name:		perl-Net-Google
 Version:	0.60
