@@ -5,13 +5,14 @@
 Summary:	Net::Google - simple OOP-ish interface to the Google SOAP API
 Summary(pl):	Net::Google - prosty, zorientowany obiektowo interfejs do Google SOAP API
 Name:		perl-Net-Google
-Version:	0.62
+Version:	1.0.1
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	570b7c777ec9ff6388f826b3c5a90c9e
+# Source0-md5:	842a1a81aac15683acea0cb7f40855a5
+BuildRequires:	perl-Module-Build
 BuildRequires:	perl-SOAP-Lite
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
@@ -30,15 +31,15 @@ interfejs do Google SOAP API.
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-%{__perl} Makefile.PL \
-	INSTALLDIRS=vendor
-%{__make}
+%{__perl} Build.PL \
+	destdir=$RPM_BUILD_ROOT \
+	installdirs=vendor
+./Build
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install \
-	DESTDIR=$RPM_BUILD_ROOT
+./Build install
 
 %clean
 rm -rf $RPM_BUILD_ROOT
