@@ -3,7 +3,7 @@
 %define		pdir	Net
 %define		pnam	Google
 Summary:	Net::Google - simple OOP-ish interface to the Google SOAP API
-Summary(pl):	Net::Google - prosty, zorientowany obiektowo interfejs do Google SOAP API
+Summary(pl.UTF-8):   Net::Google - prosty, zorientowany obiektowo interfejs do Google SOAP API
 Name:		perl-Net-Google
 Version:	1.0.1
 Release:	1
@@ -23,8 +23,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Net::Google Perl module provides a simple OOP-ish interface to the
 Google SOAP API
 
-%description -l pl
-Modu³ Perla Net::Google udostêpnia prosty, zorientowany obiektowo
+%description -l pl.UTF-8
+ModuÅ‚ Perla Net::Google udostÄ™pnia prosty, zorientowany obiektowo
 interfejs do Google SOAP API.
 
 %prep
