@@ -1,7 +1,7 @@
 # Don't do tests - they require Google Web API license key
-%include	/usr/lib/rpm/macros.perl
 %define		pdir	Net
 %define		pnam	Google
+%include	/usr/lib/rpm/macros.perl
 Summary:	Net::Google - simple OOP-ish interface to the Google SOAP API
 Summary(pl.UTF-8):	Net::Google - prosty, zorientowany obiektowo interfejs do Google SOAP API
 Name:		perl-Net-Google
@@ -12,6 +12,7 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	842a1a81aac15683acea0cb7f40855a5
+URL:		http://search.cpan.org/dist/Net-Google/
 BuildRequires:	perl-Module-Build
 BuildRequires:	perl-SOAP-Lite
 BuildRequires:	perl-devel >= 1:5.8.0
